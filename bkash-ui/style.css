@@ -1,0 +1,188 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: poppins;
+}
+
+input:focus {
+  outline: none;
+}
+
+body {
+  background-color: #f2f4f7;
+  min-height: 100vh;
+}
+
+.payment-button {
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  background-color: #e1136e;
+  color: #fff;
+  width: 20px;
+  height: 20px;
+  padding: 20px;
+  line-height: 20px;
+  border: none;
+  box-sizing: content-box;
+  border-radius: 50%;
+}
+
+.main-wrap {
+  width: 400px;
+  height: 400px;
+  margin: 50px auto 0px;
+  border-radius: 10px;
+}
+
+.main-wrap .brand {
+  text-align: center;
+}
+
+.main-wrap .brand img {
+  width: 100px;
+}
+
+.main-wrap .brand h3 {
+  font-size: 20px;
+}
+
+.user {
+  display: flex;
+  gap: 15px;
+  background-color: #e1136e;
+  padding: 15px 10px;
+  border-radius: 10px 10px 0px 0px;
+  align-items: center;
+}
+
+.user img {
+  width: 70px;
+  height: 70px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.user .info h4 {
+  font-size: 18px;
+  color: #fff;
+}
+
+.user .info .balance {
+  background-color: #fff;
+  padding: 3px 10px;
+  border-radius: 30px;
+}
+
+.transaction-area {
+  height: 600px;
+  background-color: #fff;
+  border-radius: 0px 0px 10px 10px;
+  padding: 15px;
+}
+
+.transaction-area .search {
+  display: flex;
+  justify-content: space-between;
+}
+.search-trans {
+  position: relative;
+  width: 300px;
+}
+
+.search .search-trans button {
+  background-color: transparent;
+  border: none;
+  position: absolute;
+  top: 8px;
+  left: 10px;
+  color: gray;
+}
+
+.search .search-trans input {
+  border: 1px solid #dee1e5;
+  padding: 7px 10px 7px 40px;
+  border-radius: 3px;
+  width: 100%;
+}
+
+.search .search-filter button {
+  background-color: transparent;
+  border: 1px solid #dee1e5;
+  padding: 7px 20px;
+  border-radius: 5px;
+}
+
+.transaction-list {
+  overflow: auto;
+  height: 500px;
+  margin-top: 20px;
+}
+
+.transaction-list::-webkit-scrollbar {
+  width: 10px; /* Width of the vertical scrollbar */
+  height: 10px; /* Height of the horizontal scrollbar */
+}
+
+.transaction-list::-webkit-scrollbar-track {
+  background: #f1f1f1; /* Light gray background */
+  border-radius: 5px;
+}
+
+.transaction-list::-webkit-scrollbar-thumb {
+  background: #e1136e; /* Dark gray color */
+  border-radius: 5px;
+}
+
+.transaction-item {
+  display: flex;
+  padding: 10px 0px;
+  border-bottom: 1px solid #dee1e5;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.transaction-item .trans-info {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.transaction-item .trans-info img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.transaction-item .trans-info span {
+  display: block;
+  font-size: 13px;
+}
+
+.transaction-item .trans-info span.trans-id {
+  font-weight: 600;
+  color: #e1136e;
+  font-size: 10px;
+ 
+}
+
+
+.transaction-item .trans-data {
+  text-align: right;
+  padding-right: 10px;
+}
+
+.transaction-item .trans-data span {
+  display: block;
+  font-size: 13px;
+}
+
+.transaction-item .trans-data span.trans-amount {
+  font-weight: bold;
+  color: green;
+}
+
+.transaction-item .trans-data span.trans-amount.trans-out {
+  color: red;
+}
